@@ -17,4 +17,24 @@ class Item {
         this.element.appendChild(el_year);
         this.element.appendChild(el_img);
     }
+    
 }
+ 
+    const testFolder = "/";
+    const fs = require("fs");
+
+    fs.readdir(testFolder, (err, files) => {
+        files.forEach(file => {
+        console.log(file);
+        });
+    });
+    
+
+    var files = fileInput.files;
+    for (var i = 0; i < files.length; i++) {
+        list.push(files[i].name);
+    }
+    for (var i = 0; i < files.length; i++) {
+        console.log(files[i].name);
+    }
+
