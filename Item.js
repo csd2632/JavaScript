@@ -20,16 +20,18 @@ class Item {
     
 }
  
-    const testFolder = "/";
-    const fs = require("fs");
-
-    fs.readdir(testFolder, (err, files) => {
-        files.forEach(file => {
-        console.log(file);
-        });
-    });
+    //const testFolder = "/";
+    //const fs = require("fs");
+//
+    //fs.readdir(testFolder, (err, files) => {
+    //    files.forEach(file => {
+    //    console.log(file);
+    //    });
+    //});
     
-
+    <input type="file" multiple onchange="processSelectedFiles(this)">
+    let list = [];
+    function processSelectedFiles(fileInput) {
     var files = fileInput.files;
     for (var i = 0; i < files.length; i++) {
         list.push(files[i].name);
@@ -37,4 +39,4 @@ class Item {
     for (var i = 0; i < files.length; i++) {
         console.log(files[i].name);
     }
-
+}
