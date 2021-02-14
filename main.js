@@ -11,8 +11,11 @@ function addImages(){
         {name:'0400_01726S',descr:"three",year:'2002'}
     ];
     for(i=0;i<data.length;i++){
-        addImage2Body([data[i].name,data[i].descr,data[i].year]);
+        let charact = [data[i].name,data[i].descr,data[i].year]
+        addImage2Body(charact);
 
     }
 }
 addImages();
+var x = document.querySelectorAll('div');
+console.log(x);

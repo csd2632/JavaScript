@@ -1,0 +1,32 @@
+img {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    transition: transform 2s;
+}
+  
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    /*transform: scaleY(-1);*/
+    /*transform: rotate(180deg); */
+    /*cursor: pointer;  pointer, default */
+}
+
+html {
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body {
+    font-size: 200%;
+    font-family: "Audiowide", sans-serif;
+}
+
