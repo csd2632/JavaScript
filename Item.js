@@ -10,7 +10,7 @@ class Item {
         el_img.src = './img/'+ charact[0]+'.bmp';
 
    
-   
+        
         this.element=document.createElement('div');  
         this.element.appendChild(el_name);
         this.element.appendChild(el_descr);
