@@ -1,6 +1,6 @@
 var image_pick = "";
 function autocomplete(inp, arr) {
-return new Promise((resolve,reject)=>{
+return new Promise((resolve, reject)=> {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
     var currentFocus;
