@@ -19,6 +19,7 @@ paintings_names.push(names[1]);
 paintings_mapping.push(mapping[1]);
 
 async function async_func(){
+<<<<<<< HEAD
     autocomplete(document.getElementById("myInput"), names).then((message) =>
     {
         document.getElementById("templates").innerHTML = `
@@ -33,6 +34,18 @@ async function async_func(){
 
         <p class="footer> These ${paintings_names.length} paintings were added recently.</p>
         `
+=======
+autocomplete(document.getElementById("myInput"), names).then((message) => {
+    document.getElementById("templates").innerHTML = `
+    <h1 class="app-title">Paintings(${paintings_names.length} results )</h1>
+    ${paintings_names.map(imageTemplate).join('')}
+    ${paintings_mapping.map(mappingTemplate).join('')}
+    ${paintings_names.map(pigmentTemplate).join('')}
+    ${paintings_names.map(similiarTemplate).join('')}
+    ${paintings_names.map(underlyingTemplate).join('')}
+    <p class="footer> These ${paintings_names.length} paintings were added recently.</p>
+    `
+>>>>>>> main
     })
 }
 async_func();
