@@ -19,8 +19,7 @@ paintings_names.push(names[1]);
 paintings_mapping.push(mapping[1]);
 
 async function async_func(){
-autocomplete(document.getElementById("myInput"), names).then((message) =>
-{
+autocomplete(document.getElementById("myInput"), names).then((message) => {
     document.getElementById("templates").innerHTML = `
     <h1 class="app-title">Paintings(${paintings_names.length} results )</h1>
     ${paintings_names.map(imageTemplate).join('')}
