@@ -12,7 +12,6 @@ function imageTemplate(paint) {
     </div>
     `
 }
-
 function mappingTemplate(paint){
     return `
     <div class="paintings_header">
@@ -32,7 +31,7 @@ function pigmentTemplate(paint) {
     <h1>PIGMENT IDENTIFICATION</h1>
     </div>
     <div class="paintings">
-        <img class="paint-img" src="${paint.img}">
+        <img class="center_paint-img" src="${paint.img}">
     </div>
     `
 }
@@ -42,7 +41,8 @@ function similiarTemplate(paint) {
     <h1>SIMILIAR SURFACE</h1>
     </div>
     <div class="paintings">
-        <img class="paint-img" src="${paint.img}">
+        <img class="mapped-paint-img" src="${paint.img}" width="${calculate_mapped_img_size(2)}">
+        <img class="mapped-paint-img" src="${paint.img}" width="${calculate_mapped_img_size(2)}">
     </div>
     `
 }
@@ -52,7 +52,7 @@ function underlyingTemplate(paint) {
     <h1>UNDERLYING SURFACE</h1>
     </div>
     <div class="paintings">
-        <img class="paint-img" src="${paint.img}">
+        <img class="center_paint-img" src="${paint.img}">
     </div>
     `
 }
@@ -62,7 +62,7 @@ function visibleTemplate(paint) {
     <h1>VISIBLE VARNISH</h1>
     </div>
     <div class="paintings">
-        <img class="paint-img" src="${paint.img}">
+        <img class="center_paint-img" src="${paint.img}">
     </div>
     `
 }
@@ -72,7 +72,7 @@ function uvTemplate(paint) {
     <h1>UV IMAGE</h1>
     </div>
     <div class="paintings">
-        <img class="paint-img" src="${paint.img}">
+        <img class="center_paint-img" src="${paint.img}">
     </div>
     `
 }
