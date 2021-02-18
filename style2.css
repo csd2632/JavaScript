@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background-color: #DEDEDE;
+  background-color: #b3a5a5;
   color: #333;
   padding: 20px 0 28px 0;
   margin: 0;
@@ -18,15 +18,16 @@ img {
 }
 
 .paintings {
-  max-width: 850px;
-  padding: 15px;
-  margin: 30px auto;
+  max-width: 840px;
+  padding: 20px;
+  margin: 15px auto;
   background-color: #FFF;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
   overflow: hidden;
+  
 }
 .paintings_header h1 {
-  max-width: 850px;
+  max-width: 840px;
   padding: 20px;
   margin: 30px auto;
   background-color: #FFF;
@@ -44,8 +45,10 @@ img {
 }
 .mapped-paint-img {
   float: center;
-  margin-right: 15px;
-  margin-bottom: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  align-self: center;
+  align-content: center;
 }
 .paint-img {
   float: left;
@@ -56,6 +59,11 @@ img {
   float: center;
   width: 60%;
   margin-right: 15px;
+  align-items: center;
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .paint-name {
@@ -81,16 +89,26 @@ img {
 .autocomplete {
   position: relative;
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 25%;
+
 }
 input {
-  border: 1px solid transparent;
+  border: 10px solid transparent;
   background-color: #f1f1f1;
   padding: 10px;
-  font-size: 16px;
+  font-size: 36px;
+  margin-left: auto;
+  margin-right: auto;
 }
 input[type=text] {
   background-color: #f1f1f1;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
 }
 
 input[type=submit] {
@@ -108,12 +126,16 @@ input[type=submit] {
   top: 100%;
   left: 0;
   right: 0;
+  text-align: center;
+  font-size: 36px;
 }
 .autocomplete-items div {
   padding: 10px;
   cursor: pointer;
   background-color: #fff; 
   border-bottom: 1px solid #d4d4d4; 
+ 
+
 }
 /*when hovering an item:*/
 .autocomplete-items div:hover {

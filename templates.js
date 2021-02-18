@@ -18,10 +18,7 @@ function mappingTemplate(paint){
     <h1>MAPPING IMAGE</h1>
     </div>
     <div class="paintings">
-        <img class="mapped-paint-img" src="${paint.img1}" width="${calculate_mapped_img_size(4)}">
-        <img class="mapped-paint-img" src="${paint.img2}" width="${calculate_mapped_img_size(4)}">
-        <img class="mapped-paint-img" src="${paint.img3}" width="${calculate_mapped_img_size(4)}">
-        <img class="mapped-paint-img" src="${paint.img4}" width="${calculate_mapped_img_size(4)}">
+        <img class="mapped-paint-img" src="${paint.img1}" width="${calculate_mapped_img_size(4)}"><img class="mapped-paint-img" src="${paint.img2}" width="${calculate_mapped_img_size(4)}"><img class="mapped-paint-img" src="${paint.img3}" width="${calculate_mapped_img_size(4)}"><img class="mapped-paint-img" src="${paint.img4}" width="${calculate_mapped_img_size(4)}">    
     </div>
     `
 }
@@ -41,8 +38,7 @@ function similiarTemplate(paint) {
     <h1>SIMILIAR SURFACE</h1>
     </div>
     <div class="paintings">
-        <img class="mapped-paint-img" src="${paint.img}" width="${calculate_mapped_img_size(2)}">
-        <img class="mapped-paint-img" src="${paint.img}" width="${calculate_mapped_img_size(2)}">
+        <img class="mapped-paint-img" src="${paint.img}" width="${calculate_mapped_img_size(2)}"><img class="mapped-paint-img" src="${paint.img}" width="${calculate_mapped_img_size(2)}">
     </div>
     `
 }
@@ -52,7 +48,7 @@ function underlyingTemplate(paint) {
     <h1>UNDERLYING SURFACE</h1>
     </div>
     <div class="paintings">
-        <img class="center_paint-img" src="${paint.img}">
+        <img class="center_paint-img" style = "orizontal-align:middle" src="${paint.img}" >
     </div>
     `
 }
