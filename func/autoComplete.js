@@ -1,6 +1,6 @@
 var image_pick = "";
 function autocomplete(inp, arr) {
-    return new Promise((resolve, reject)=> {
+    return new Promise((resolve, reject) => {
         /*the autocomplete function takes two arguments,
         the text field element and an array of possible autocompleted values:*/
         var currentFocus;
@@ -30,12 +30,12 @@ function autocomplete(inp, arr) {
                 }
             }
         }
-        /*execute a function when someone writes in the text field:*/
         inp.addEventListener("input", function(e) {
+            /*executed when someone writes in the text field:*/
             var a, b, i, val = this.value;
             /*close any already open lists of autocompleted values*/
             closeAllLists();
-            if (!val) { return "firstfalse";}
+            if (!val) {return "firstfalse";}
             currentFocus = -1;
             /*create a DIV element that will contain the items (values):*/
             a = document.createElement("DIV");
@@ -66,8 +66,8 @@ function autocomplete(inp, arr) {
                 }
             }
         });
-        /*execute a function presses a key on the keyboard:*/
         inp.addEventListener("keydown", function(e) {
+            /*executed when someone presses a key:*/
             var x = document.getElementById(this.id + "autocomplete-list");
             if (x){ x = x.getElementsByTagName("div");}
             if (e.keyCode == 40) {
@@ -76,15 +76,13 @@ function autocomplete(inp, arr) {
                 currentFocus++;
                 /*and and make the current item more visible:*/
                 addActive(x);
-            } 
-            else if (e.keyCode == 38) { //up
+            }else if (e.keyCode == 38) { //up
                 /*If the arrow UP key is pressed,
                 decrease the currentFocus variable:*/
                 currentFocus--;
                 /*and and make the current item more visible:*/
                 addActive(x);
-            } 
-            else if (e.keyCode == 13) {
+            }else if (e.keyCode == 13) {
                 /*If the ENTER key is pressed, prevent the form from being submitted,*/
                 e.preventDefault();
                 if (currentFocus > -1) {
@@ -99,8 +97,8 @@ function autocomplete(inp, arr) {
                 }
             }
         });
-        /*execute a function when someone clicks in the document:*/
         document.addEventListener("click", function (e) {
+            /*executed when someone clicks in the document:*/
             closeAllLists(e.target);
         });
     })
