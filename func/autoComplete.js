@@ -1,4 +1,4 @@
-var image_pick = "";
+
 function autocomplete(inp, arr) {
     return new Promise((resolve, reject) => {
         /*the autocomplete function takes two arguments,
