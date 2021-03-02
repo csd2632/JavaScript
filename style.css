@@ -1,4 +1,3 @@
-
 body {
   font-family: sans-serif;
   background-color: #b3a5a5;
@@ -22,6 +21,9 @@ img {
   background-color: #FFF;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
   overflow: hidden;
+  display: flex;
+  border:2px solid #333;
+  
 }
 .paintings_header h1 {
   max-width: 840px;
@@ -31,12 +33,19 @@ img {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
   overflow: hidden;
   text-align: center;
+  border:2px solid #333;
 }
+
 .paintings h4 {
-  margin: 0 0 6px 0;
+  margin: 0 0 2px 0;
+  
 }
 .paintings h3{
-  margin: 0 0 6px 0;
+  margin: 0 0 2px 0;
+ 
+ border-right: 30px solid transparent;
+ border-bottom: 20px solid transparent;
+ 
 }
 .mapped-paint-img {
   float: center;
@@ -48,23 +57,31 @@ img {
 .paint-img {
   float: left;
   width: 60%;
-  margin-right: 15px;
+  margin-right:8%;
 }
 .center_paint-img {
   float: center;
   width: 60%;
-  margin-right: 15px;
   align-items: center;
   margin: auto;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.paint-name {
-  font-size: 2rem;
+.paint-name_left {
+  font-size: 0.9rem;
   font-weight: normal;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0 0;
   color: #888;
+  margin-right: 100px;
+}
+.paint-name_right {
+  float:inline-end;
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin: 0 0 0 0;
+  color: #888;
+  text-align: left;
 }
 .species {
   font-size: .9rem;
@@ -76,6 +93,11 @@ img {
   color: #888;
   text-align: center;
   margin: 0;
+}
+.paintings h2{
+  font-size: 1rem;
+  border-right: 30px solid transparent;
+  border-bottom: 5px solid transparent;
 }
 /*search bar*/
 .autocomplete {
@@ -133,3 +155,72 @@ input[type=submit] {
   background-color: DodgerBlue !important; 
   color: #ffffff; 
 }
+
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+

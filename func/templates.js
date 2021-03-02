@@ -1,3 +1,24 @@
+function checkBoxTemplate(){
+    return`
+    <h1>Custom Checkboxes</h1>
+    <label class="container">One
+      <input type="checkbox" >
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Two
+      <input type="checkbox"  id="myCheck" onclick="check_function(Two)">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Three
+      <input type="checkbox" >
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Four
+      <input type="checkbox" id="myCheck" onclick="check_function()">
+      <p id="text" style="display:none">Checkbox is CHECKED!</p>
+      <span class="checkmark"></span>
+    </label>`
+}
 function imageTemplate(paint) {
     return `
     <div class="paintings_header">
@@ -5,10 +26,28 @@ function imageTemplate(paint) {
     </div>
     <div class="paintings">
         <img class="paint-img" src="${paint.img}">
-        <h2 class="NAME">NAME</h1>
-        <h3 class="paint-name">${paint.name}</h3>
-        <h2 class="NAME">NAME</h1>
-        <h3 class="paint-name">${paint.name}</h3>
+        <section>
+        <h2 class="NAME">TITLE</h2>
+        <h3 class="paint-name_left">${paint.name}   </h3>
+        <h2 class="NAME">DATE</h2>
+        <h3 class="paint-name_left">${paint.date}   </h3>
+        <h2 class="NAME">MATERIALS</h2>
+        <h3 class="paint-name_left">${paint.materials}  </h3>
+        <h2 class="NAME">INSTITUTION</h2>
+        <h3 class="paint-name_left">${paint.institution}</h3>
+        <h2 class="NAME">DESCRIPTION</h2>
+        <h3 class="paint-name_left">${paint.description}</h3>
+        </section>
+        <section>
+        <h2 class="NAME">DESCRIPTION</h2>
+        <h3 class="paint-name_right">${paint.inv}</h3>
+        <h2 class="NAME">DESIGNATION</h2>
+        <h3 class="paint-name_right">${paint.designation}</h3>
+        <h2 class="NAME">DIMENSION</h2>
+        <h3 class="paint-name_right">${paint.dimention}</h3>
+        <h2 class="NAME">PERSON</h2>
+        <h3 class="paint-name_right">${paint.person}</h3>
+        </section>
     </div>
     `
 }
@@ -26,14 +65,25 @@ function pigmentTemplate(paint) {
     return `
     <div class="paintings_header">
     <h1>PIGMENT IDENTIFICATION</h1>
-    </div>
+    <div class="paintings">
+        <div class="charts">
+        <div class="charts__chart chart--p100 chart--default" data-percent></div><!-- /.charts__chart -->
+        <div class="charts__chart chart--p80 chart--blue" data-percent></div><!-- /.charts__chart -->
+        <div class="charts__chart chart--p60 chart--green" data-percent></div><!-- /.charts__chart -->
+        <div class="charts__chart chart--p40 chart--red" data-percent></div><!-- /.charts__chart -->
+        <div class="charts__chart chart--p20 chart--yellow" data-percent></div><!-- /.charts__chart -->
+        <div class="charts__chart chart--p5 chart--grey" data-percent></div><!-- /.charts__chart -->
+        
     <div class="paintings">
         <img class="center_paint-img" src="${paint.img}">
+    </div>
+    </div>
     </div>
     `
 }
 function similiarTemplate(paint) {
     return `
+    
     <div class="paintings_header">
     <h1>SIMILIAR SURFACE</h1>
     </div>

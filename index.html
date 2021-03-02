@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="./func/mapped_img.js"></script>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "> </script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/theus/chart.css/v1.0.0/dist/chart.css" />
     <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ReportingTool</title>
   </head>
   <body>  
-  </body>
     <form autocomplete="off" >
       <div class="autocomplete" style="width:600px;">
         <input id="myInput" type="text" name="Search work of art" placeholder="Search work of art">
       </div>
     </form>
     <div id = templates></div>
+    <h1>Custom Checkboxes</h1>
+    <label class="container">One
+      <input type="checkbox" >
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Two
+      <input type="checkbox"  id="myCheck" onclick="check_function(2)">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Three
+      <input type="checkbox" >
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">Four
+      <input type="checkbox" id="myCheck" onclick="check_function()">
+      <p id="text" style="display:none">Checkbox is CHECKED!</p>
+      <span class="checkmark"></span>
+    </label>`
   </body>
 </html>
-<script src="./func/mapped_img.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript"></script>
+<div id="columnchart_values" style="width: 900px; height: 300px;"></div>
+<script type="text/javascript"></script>
 <script src="./func/templates.js"></script>
 <script src="./func/autocomplete.js"></script>
 <script src="./main.js"></script>
+
+
