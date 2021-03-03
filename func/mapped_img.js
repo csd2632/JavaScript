@@ -43,7 +43,7 @@ function check_function(numbe) {
         if(numbe == 2) {
             text.style.display = "block";
             document.getElementById("templates")
-            .innerHTML =` ${paintings_names.map(imageTemplate).join('')};`
+            .innerHTML +=` ${paintings_names.map(imageTemplate).join('')};`
             document.getElementById("templates")
             .innerHTML +=` ${paintings_names.map(mappingTemplate).join('')};`
             checkBox.checked = false;
