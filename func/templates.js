@@ -1,4 +1,4 @@
-function checkBoxTemplate(){
+function checkBoxTemplate() {
     return`
     <h1>Custom Checkboxes</h1>
     <label class="container">One
@@ -51,7 +51,7 @@ function imageTemplate(paint) {
     </div>
     `
 }
-function mappingTemplate(paint){
+function mappingTemplate(paint) {
     return `
     <div class="paintings_header">
     <h1>MAPPING IMAGE</h1>
@@ -83,7 +83,6 @@ function pigmentTemplate(paint) {
 }
 function similiarTemplate(paint) {
     return `
-    
     <div class="paintings_header">
     <h1>SIMILIAR SURFACE</h1>
     </div>
