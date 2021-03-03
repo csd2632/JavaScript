@@ -45,7 +45,7 @@ function check_function(numbe) {
             document.getElementById("templates")
             .innerHTML +=` ${paintings_names.map(imageTemplate).join('')};`
             document.getElementById("templates")
-            .innerHTML +=` ${paintings_names.map(mappingTemplate).join('')};`
+            .innerHTML +=` ${paintings_mapping.map(mappingTemplate).join('')};`
             checkBox.checked = false;
         }
     }else {

@@ -6,7 +6,7 @@ function checkBoxTemplate() {
       <span class="checkmark"></span>
     </label>
     <label class="container">Two
-      <input type="checkbox"  id="myCheck" onclick="check_function(Two)">
+      <input type="checkbox"  id="myCheck" onclick="check_function(2)">
       <span class="checkmark"></span>
     </label>
     <label class="container">Three

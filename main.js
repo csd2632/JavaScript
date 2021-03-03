@@ -31,20 +31,21 @@ var functions = {
 };
 
 async function async_func(){
-    autocomplete(document.getElementById("myInput"), names).then((message) => {
+    autocomplete(document.getElementById("myInput"), names).then((message) => {   
         document.getElementById("templates").innerHTML = ` 
-        ${paintings_names.map(imageTemplate).join('')}
-        ${paintings_names.map(imageTemplate).join('')}
-        ${paintings_mapping.map(mappingTemplate).join('')}
-        ${paintings_names.map(pigmentTemplate).join('')}
-        ${paintings_names.map(similiarTemplate).join('')}
-        ${paintings_names.map(underlyingTemplate).join('')}
-        ${paintings_names.map(visibleTemplate).join('')}
-        ${paintings_names.map(uvTemplate).join('')}
+        ${checkBoxTemplate()}
+
         `
     })
 }
 async_func();
 
-
+//${paintings_names.map(imageTemplate).join('')}
+//${paintings_names.map(imageTemplate).join('')}
+//${paintings_mapping.map(mappingTemplate).join('')}
+//${paintings_names.map(pigmentTemplate).join('')}
+//${paintings_names.map(similiarTemplate).join('')}
+//${paintings_names.map(underlyingTemplate).join('')}
+//${paintings_names.map(visibleTemplate).join('')}
+//${paintings_names.map(uvTemplate).join('')}
 
